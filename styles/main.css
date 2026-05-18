@@ -3432,7 +3432,7 @@ select {
 .reservation__item {
   padding: 70px;
   width: 50%;
-  background-color: #dddad3;
+  background-color: #dedbd2;
 }
 @media (max-width: 1024px) {
   .reservation__item {
@@ -3441,7 +3441,6 @@ select {
 }
 @media (max-width: 768px) {
   .reservation__item {
-    max-width: 423px;
     margin: 0 auto;
     padding: 50px 25px;
   }
@@ -3805,18 +3804,7 @@ select {
 .events__bottom-block {
   margin-top: 2px;
   width: 100%;
-  padding-bottom: 20px;
   background-color: #dedbd2;
-}
-@media (max-width: 1024px) {
-  .events__bottom-block {
-    padding-bottom: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .events__bottom-block {
-    padding-bottom: 20px;
-  }
 }
 
 .sea-gifts__wrapper {
