@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script type="module" crossorigin src="./scripts/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./styles/main.css">
+  </head>  <body>
+    <div class="site-container">
+      <header class="header">
+          <div class="header__content">
+              <div class="header__left">
+                  <button class="burger btn-reset" data-menu-open>
+                      <span class="burger__line"></span>
+                      <span class="burger__line"></span>
+                      <span class="burger__line"></span>
+                  </button>
+                  <nav class="header__nav">
+                      <ul class="header__nav-list list-reset">
+                          <li class="header__nav-item">
+                              <a class="header__nav-link" href="./about.html">Ресторан</a>
+                          </li>
+                          <li class="header__nav-item">
+                              <a class="header__nav-link" href="./menu.html">Меню</a>
+                          </li>
+                          <li class="header__nav-item">
+                              <a class="header__nav-link" href="https://yandex.com/maps/org/pro_krevetki/217872112899/reviews/?ll=45.972363%2C51.577700&z=16">Отзывы</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+              <a class="header__logo" href="./index.html">
+                  <img src="./images/pro_krevetki_logo.webp" alt="">
+              </a>
+              <div class="header__right">
+                  <nav class="header__nav">
+                      <ul class="header__nav-list list-reset">
+                          <li class="header__nav-item">
+                              <a class="header__nav-link" href="./privileges.html">Привилегии</a>
+                          </li>
+                          <li class="header__nav-item">
+                              <a class="header__nav-link" href="https://514812.restoplace.ws/">Резерв</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <ul class="header__social list-reset">
+                      <li class="header__social-item">
+                          <a class="header__social-link" href="https://www.instagram.com/pro_krevetki/">
+                              <svg aria-hidden="true" viewBox="0 0 448 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                                                                                                                      </svg>
+                          </a>
+                      </li>
+                      <li class="header__social-item">
+                          <a class="header__social-link" href="https://t.me/pro_krevetki">
+                              <svg aria-hidden="true" viewBox="0 0 448 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                          <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                                                                                                                                      </svg>
+                          </a>
+                      </li>
+                      <li class="header__social-item">
+                          <a class="header__social-link" href="https://vk.com/pro_krevetki">
+                              <svg aria-hidden="true" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="header__menu-mob" data-menu>
+                  <nav class="header__menu-mob-nav">
+                      <ul class="header__menu-mob-nav-list list-reset">
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="./about.html" data-menu-link>Ресторан</a>
+                          </li>
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="./menu.html" data-menu-link>Меню</a>
+                          </li>
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="./privileges.html" data-menu-link>Привилегии</a>
+                          </li>
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="https://yandex.com/maps/org/pro_krevetki/217872112899/reviews/?ll=45.972363%2C51.577700&z=16" data-menu-link>Отзывы</a>
+                          </li>
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="https://514812.restoplace.ws/" data-menu-link>Резерв</a>
+                          </li>
+                          <li class="header__menu-mob-nav-item">
+                              <a class="header__menu-mob-nav-link" href="./contacts.html" data-menu-link>Контакты</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <ul class="header__menu-mob-social list-reset">
+                      <li class="header__menu-mob-social-item">
+                          <a class="header__menu-mob-social-link" href="https://www.instagram.com/pro_krevetki/">
+                               <svg aria-hidden="true" viewBox="0 0 448 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                                                                                                                      </svg>
+                          </a>
+                      </li>
+                       <li class="header__menu-mob-social-item">
+                          <a class="header__menu-mob-social-link" href="https://t.me/pro_krevetki">
+                               <svg aria-hidden="true" viewBox="0 0 448 512" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                          <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                                                                                                                                      </svg>
+                          </a>
+                      </li>
+                       <li class="header__menu-mob-social-item">
+                          <a class="header__menu-mob-social-link" href="https://vk.com/pro_krevetki">
+                               <svg aria-hidden="true" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
+                          </a>
+                      </li>
+                  </ul>
+                  <button class="header__menu-mob-close btn-reset" data-menu-close>
+                      <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11083)"> <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11083"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
+                  </button>
+              </div>
+          </div>
+      </header>      <main class="main">
+        <div
+          class="top-content"
+          style="
+            background-image: url(images/20260408_pro_krevetki_042_3843.jpg);
+          "
+        >
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ul class="breadcrumbs__list list-reset">
+              <li class="breadcrumbs__item">
+                <a href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">Меню ресторана</li>
+            </ul>
+          </nav>
+          <div class="animate-cont">
+            <h1 class="page-title" data-aos="fade-up" data-aos-duration="1000">
+              Меню ресторана
+            </h1>
+          </div>
+        </div>
+
+        <div class="menu-page">
+            <div class="menu-page__content">
+                <div class="menu-page__body">
+                    <div class="menu-page__body-item" id="osnovnoe">
+                        <h2 class="menu-page__body-title">Основное меню</h2>
+                        <div class="menu-page__body-item-menu">
+                          <iframe src="/pdfjs/web/viewer.html?file=/images/menu2026.pdf"></iframe>
+                        </div>
+                    </div>
+                    <div class="menu-page__body-item" id="bar">
+                        <h2 class="menu-page__body-title">Барная карта</h2>
+                        <div class="menu-page__body-item-menu">
+                          <iframe src="/pdfjs/web/viewer.html?file=/images/bar2026.pdf"></iframe>
+                        </div>
+                    </div>
+                    <div class="menu-page__body-item" id="kids">
+                        <h2 class="menu-page__body-title">Детское меню</h2>
+                        <div class="menu-page__body-item-menu">
+                          <iframe src="/pdfjs/web/viewer.html?file=/images/kids2026.pdf"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-page__info">
+                    <button class="menu-page__info-btn btn-reset">Меню <span>▲</span></button>
+                    <div class="menu-page__info-content">
+                        <div class="menu-page__info-content-list">
+                            <a class="menu-page__info-link" href="#osnovnoe">Основное меню</a>
+                            <a class="menu-page__info-link" href="#bar">Барная карта</a>
+                            <a class="menu-page__info-link" href="#kids">Детское меню</a>
+                        </div>
+                        <a class="menu-page__info-delivery" href="">Заказать доставку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="reservation">
+        
+          <div
+            class="reservation__image reservation__item"
+            style="background-image: url(images/20260408_pro_krevetki_042_3843.webp);"
+          ></div>
+          <div class="reservation__item">
+            <div class="reservation__content">
+              <div class="reservation__inner">
+                <h2 class="reservation__title">
+                  Откройте для себя<br />
+                  PRO Креветки
+                </h2>
+                <div class="reservation__text-container">
+                  <p class="reservation__text">
+                    Для гостей, которые бронируют онлайн, действует ограничение — 2,5
+                    часа (для каждого стола).<br />
+                  </p>
+        
+                  <a class="reservation__phone" href="tel:+78452778881">
+                    +7 (8452) 77-88-81
+                  </a>
+        
+                  <p class="reservation__address">
+                    Саратов, просп. имени 50 лет Октября, 91М этаж 1
+                  </p>
+        
+                  <p class="reservation__time">
+                    Ежедневно с 12:00 до 00:00
+                  </p>
+                </div>
+                <div data-aos="fade-up"
+                    data-aos-duration="1000">
+                   <a
+                    class="reservation__button"
+                    href="https://514812.restoplace.ws/"
+                    target="_blank"
+                    
+                  >
+                    Забронировать стол
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        
+        </section>      </main>
+      <div class="overlay"></div>
+      <a class="to-book" href="https://514812.restoplace.ws/" target="_blank">Забронировать стол</a>
+      
+        <section class="map">
+          <div class="map__content">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea53b11a3274838c7650ee79b522439386d18f640dc0a3763d5ec22e5cb662d1&amp;source=constructor"
+              width="1280"
+              height="250"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </section>  <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__content">
+              <nav class="footer__nav list-reset">
+                <ul class="footer__nav-list list-reset">
+                  <li class="footer__nav-item">
+                    <a href="./about.html" class="footer__nav-link">Ресторан</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./menu.html" class="footer__nav-link">Меню</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="./privileges.html" class="footer__nav-link">Привилегии</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="https://yandex.com/maps/org/pro_krevetki/217872112899/reviews/?ll=45.972363%2C51.577700&z=16" target="_blank" class="footer__nav-link">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      href="https://514812.restoplace.ws/"
+                      target="_blank"
+                      class="footer__nav-link"
+                    >Резерв</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__contacts">
+                <div class="footer__contacts-item">
+                  <span class="footer__contacts-loc">Саратов, просп. имени 50
+                    лет Октября, 91М этаж 1</span>
+                </div>
+                <div class="footer__contacts-tworks">
+                  <span class="footer__contacts-tworks-text">
+                    График работ:
+                  </span>
+                  <span class="footer__contacts-tworks-value">
+                    Ежедневно с 12:00 до 00:00</span>
+                </div>
+                <div class="footer__contacts-item">
+                  <a href="tel:+78452778881" class="footer__contacts-link">+7 (8452)
+                    77-88-81</a>
+                </div>
+                <div class="footer__contacts-item footer__contacts-item--bottom">
+                  <div class="footer__contacts-social">
+                    <ul class="footer__contacts-social-list list-reset">
+                      <li class="footer__contacts-social-item">
+                        <a
+                          class="footer__contacts-social-item-link"
+                          href="https://www.instagram.com/pro_krevetki/"
+                          target="_blank"
+                        >
+      
+                          <svg
+                            aria-hidden="true"
+                            class="e-font-icon-svg e-fab-instagram"
+                            viewBox="0 0 448 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="footer__contacts-social-item">
+                        <a
+                          class="footer__contacts-social-item-link"
+                          href="https://t.me/@pro_krevetki"
+                          target="_blank"
+                        >
+      
+                          <svg
+                            aria-hidden="true"
+                            class="e-font-icon-svg e-fab-telegram-plane"
+                            viewBox="0 0 448 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="footer__contacts-social-item">
+                        <a
+                          class="footer__contacts-social-item-link"
+                          href="https://www.instagram.com/pro_krevetki/"
+                          target="_blank"
+                        >
+      
+                          <svg
+                            aria-hidden="true"
+                            class="e-font-icon-svg e-fab-vk"
+                            viewBox="0 0 576 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__about">
+                <a href="./index.html" class="footer__about-logo">
+                  <img src="./images/pro_krevetki_logo.webp" alt="Logo" />
+                </a>
+                <div class="footer__about-content"><p class="footer__about-copyright">
+                    Copyright © ООО «ПРО МОРЕ»
+                    <br />
+                    2026 Все права защищены</p>
+                  <div class="footer__about-requisites">
+                    ИНН: 501701001<br />ОГРН: 1255000081104
+                  </div>
+                  <p class="footer__about-text">
+                    На сайте представлен предлагаемый вариант сервировки/блюда.
+                  </p></div>
+      
+              </div>
+      
+                <video class="footer__video" autoplay loop muted playsinline>
+                    <source src="./video/fot.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      
+      </footer>    </div>
+  </body>
+</html>
